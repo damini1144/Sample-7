@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock Market Education</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f28705; /* Indian flag orange */
+      font-family: Arial, sans-serif;
+      color: #144d9c;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 17px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #144d9c;
+      color: white;
+      font-size: 16px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #103c7c;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      background-color: #25D366;
+      border-radius: 30px;
+      padding: 10px 15px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      animation: blink 1.5s infinite;
+    }
+
+    .whatsapp-button img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .label-text {
+      color: white;
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: 16px;
+    }
+
+    @keyframes blink {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      color: #144d9c;
+      margin-top: auto;
+    }
+
+    /* Mobile View Fixes */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .label-text {
+        display: none;
+      }
+
+      .whatsapp-button {
+        padding: 16px;
+        border-radius: 50%;
+      }
+
+      .whatsapp-button img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FOR ENROLLMENT<br>PLEASE CONTACT<br>OUR CUSTOMER SERVICE</h1>
+    <p>We will provide comprehensive stock market education.</p>
+    <a href="https://chat.whatsapp.com/KXxJH0ibg8dL7t54kPg8Rc" class="btn">CONTACT US</a>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://chat.whatsapp.com/KXxJH0ibg8dL7t54kPg8Rc" target="_blank" class="whatsapp-button" aria-label="Join on WhatsApp">
+    <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp Icon" />
+    <span class="label-text">Contact Us</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 All Rights Reserved | Trading Insights Group</p>
+  </footer>
+</body>
+</html>

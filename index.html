@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Education Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7931e;
+      color: #1557b4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .icon {
+      margin-bottom: 25px;
+    }
+
+    .icon img {
+      width: 70px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background-color: #1557b4;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .btn:hover {
+      background-color: #0c3f8a;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      background-color: #25D366;
+      border-radius: 30px;
+      padding: 10px 15px;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      animation: blink 1.5s infinite;
+    }
+
+    .whatsapp-button img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .label-text {
+      color: white;
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: 16px;
+    }
+
+    @keyframes blink {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    /* Footer */
+    .footer {
+      background: transparent;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+      color: #1557b4;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .label-text {
+        display: none;
+      }
+
+      .whatsapp-button {
+        padding: 16px;
+        border-radius: 50%;
+      }
+
+      .whatsapp-button img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .btn {
+        font-size: 15px;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content-box">
+   <div class="icon">📘</div>
+    <h1>We will provide you<br>with thorough stock market education</h1>
+
+    <p>
+      We do not sell any courses, but aim to spread knowledge of trading so that people first possess financial literacy before entering the market.
+    </p>
+
+    <a href="learn-more.html" class="btn">LEARN MORE</a>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 All Rights Reserved | Trading Insights Group</p>
+  </footer>
+
+</body>
+</html>
